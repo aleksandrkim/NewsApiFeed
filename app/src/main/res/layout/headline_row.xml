@@ -1,0 +1,68 @@
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view_foreground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:paddingBottom="@dimen/material_typography_top_bottom_padding"
+    android:paddingLeft="@dimen/material_typography_edge_padding"
+    android:paddingRight="@dimen/material_typography_edge_padding"
+    android:paddingTop="@dimen/material_typography_top_bottom_padding">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="@color/textDarkTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:fontFamily="@string/font_family_medium"
+        android:paddingStart="@dimen/material_typography_edge_padding"
+        android:maxLines="2"
+        android:text="Trump is on the loose kasdf ksjdfk kjf sjdfjsnjfn jdvn"
+        android:textColor="@color/textDarkTitle"
+        android:textSize="@dimen/material_typography_subheading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/source_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:fontFamily="@string/font_family_regular"
+        android:paddingStart="@dimen/material_typography_edge_padding"
+        android:singleLine="true"
+        android:text="The New York Times"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/source_name_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image"
+        app:layout_constraintTop_toBottomOf="@id/title"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="marquee"
+        android:fontFamily="@string/font_family_light"
+        android:paddingStart="@dimen/material_typography_edge_padding"
+        android:maxLines="2"
+        android:text="asdasasd nasd asdasasd nasd nasd v 2 2 2 2 2 2 2 2 asda asds"
+        android:textColor="@color/textDarkSubheading"
+        android:textSize="@dimen/material_typography_body"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image"
+        app:layout_constraintTop_toBottomOf="@id/source_name"/>
+
+</android.support.constraint.ConstraintLayout>
